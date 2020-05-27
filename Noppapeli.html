@@ -8,30 +8,32 @@
     </head>
     <body class="jsbody">
 
-                    <!-- Header Section-->
-        <header id="headerJS">
-            <div class="headercontent headerbannerJS">
-                <h1 id="titleJS">JavaScript</h1>
+                <!-- Header Section-->
+        <header id="header">
+            <div class="headercontent headerbanner">
+                <h1 id="title">Sikanoppapeli</h1>
         
-                    <!-- Testaus.html = HTML/CSS testausta | JavaScript.html = Muuntimet | Placeholder Tyhjä -->
-                <nav class="naviJS">
-                    <ul>
-                        <li class="buttonsite"><a href="Kotisivu.html">HTML/CSS</a></li>
-                        <li class="buttonsite"><a href="Lämpötila.html">Lämpötila</a></li>
-                        <li class="buttonsite"><a href="Noppapeli.html">Sikanoppapeli</a></li>
+                    <!-- Linkit eri sivuille -->
+                <nav class="navi">
+                    <ul class="naviul">
+                        <a href="Kotisivu.html"><li class="buttonsite">Kotisivu</li></a>
+                        <a href="Lämpötila.html"><li class="buttonsite">Lämpötila</li></a>
+                        <a href="Noppapeli.html"><li class="buttonsite">Sikanoppapeli</li></a>
+                        <a href="Lomake.html"><li class="buttonsite">Lomake</li></a>
+                        <a href="Kaverilista.html"><li class="buttonsite">Kaverilista</li></a>
                     </ul>
                 </nav>
             </div>
         </header>
 
-                <!-- Content Section -->
+            <!-- Content Section -->
         <div class="sisältöJS">
             <div class="noppapeli">
                 <h1 id="noppapelititle">Sikanoppapeli</h1>
                 <div class="pelinapit">
-                    <button class="btn-new">New Game</button>
-                    <button class="btn-roll">Roll Dice</button>
-                    <button class="btn-hold">Hold</button>
+                    <button class="btn-new noppapeli-btn">New Game</button>
+                    <button class="btn-roll noppapeli-btn">Roll Dice</button>
+                    <button class="btn-hold noppapeli-btn">Hold</button>
                 </div>
                 <div id="dice1">
                     <img class="diceimg" id="diceimg1" src="resources/dice-1.gif">

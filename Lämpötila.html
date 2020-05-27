@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>JavaScript</title>
+        <title>Lämpötila</title>
         <meta name=”viewport” content=”width=device-width, initial-scale=1″>
         <link href="resources/styles/styles.css" rel="stylesheet">
         <link href="resources/styles/reset.css" rel="stylesheet">
-        <script src="resources/scripts/muunnin.js" type="text/javascript"></script>
     </head>
     <body class="jsbody">
 
                 <!-- Header Section-->
-        <header id="headerJS">
-            <div class="headercontent headerbannerJS">
-                <h1 id="titleJS">JavaScript</h1>
+        <header id="header">
+            <div class="headercontent headerbanner">
+                <h1 id="title">Lämpötilojen yksikkömuunnin</h1>
         
-                    <!-- Testaus.html = HTML/CSS testausta | JavaScript.html = Muuntimet | Placeholder Tyhjä -->
-                <nav class="naviJS">
-                    <ul>
-                        <li class="buttonsite"><a href="Kotisivu.html">HTML/CSS</a></li>
-                        <li class="buttonsite"><a href="Lämpötila.html">Lämpötila</a></li>
-                        <li class="buttonsite"><a href="Noppapeli.html">Sikanoppapeli</a></li>
+                    <!-- Linkit eri sivuille -->
+                <nav class="navi">
+                    <ul class="naviul">
+                        <a href="Kotisivu.html"><li class="buttonsite">Kotisivu</li></a>
+                        <a href="Lämpötila.html"><li class="buttonsite">Lämpötila</li></a>
+                        <a href="Noppapeli.html"><li class="buttonsite">Sikanoppapeli</li></a>
+                        <a href="Lomake.html"><li class="buttonsite">Lomake</li></a>
+                        <a href="Kaverilista.html"><li class="buttonsite">Kaverilista</li></a>
                     </ul>
                 </nav>
             </div>
@@ -30,35 +31,74 @@
             <div class="lämpötila">
                 <h1 class="lämpötilatitle">Lämpötilan yksikkömuunnin</h1>
                 <h2 class="lämpötilah2">Syötä luku haluamaasi kenttään</h2>
+
+                <!-- Muuta celsius -->
                 <div class="lämpötilaC">
                     <h3>Celsius</h3>
-                    <form name="lämpötilatC">
-                        Celsius: <input type="text" name="celsius" placeholder="Celsius"><br />
-                        Fahrenheit: <input type="text" name="fahrenheit" placeholder="Fahrenheit" READONLY><br />
-                        Kelvin: <input type="text" name="kelvin" placeholder="Kelvin" READONLY><br />
+                    <div class="tablec">
+                    <form name="lämpötilatC" id="celsiusform">
+                        <p>
+                        <label for="celsius1">Celsius:</label>
+                        <input type="text" name="celsius" class="celsius1" placeholder="Celsius"/><br/>
+                        </p>
+                        <p>
+                        <label for="fahrenheit1">Fahrenheit:</label>
+                        <input type="text" name="fahrenheit" class="fahrenheit1" placeholder="Fahrenheit" READONLY/><br/>
+                        </p>
+                        <p>
+                        <label for="kelvin1">Kelvin:</label>
+                        <input type="text" name="kelvin" class="kelvin1" placeholder="Kelvin" READONLY/><br/>
+                        </p>
                         <input type="button" value="Muunna!" onClick="muunnaC()"/>
                         <input type="button" value="Reset" onClick="resetC()"/>
                     </form>
+                    </div>
                 </div>
+
+                <!-- Muuta fahrenheit -->
                 <div class="lämpötilaF">
                     <h3>Fahrenheit</h3>
-                    <form name="lämpötilatF">
-                        Fahrenheit: <input type="text" name="fahrenheit" placeholder="Fahrenheit"><br />
-                        Celsius: <input type="text" name="celsius" placeholder="Celsius" READONLY><br />
-                        Kelvin: <input type="text" name="kelvin" placeholder="Kelvin" READONLY><br />
+                    <div class="tablef">
+                    <form name="lämpötilatF" id="fahrenform">
+                        <p>
+                        <label for="fahrenheit1">Fahrenheit:</label>
+                        <input type="text" name="fahrenheit" class="fahrenheit1" placeholder="Fahrenheit"><br/>
+                        </p>
+                        <p>
+                        <label for="celsius1">Celsius:</label>
+                        <input type="text" name="celsius" class="celsius1" placeholder="Celsius" READONLY><br/>
+                        </p>
+                        <p>
+                        <label for="kelvin1">Kelvin:</label>
+                        <input type="text" name="kelvin" class="kelvin1" placeholder="Kelvin" READONLY><br/>
+                        </p>
                         <input type="button" value="Muunna!" onClick="muunnaF()"/>
                         <input type="button" value="Reset" onClick="resetF()"/>
                     </form>
+                    </div>
                 </div>
+
+                <!-- Muuta kelvin -->
                 <div class="lämpötilaK">
                     <h3>Kelvin</h3>
-                    <form name="lämpötilatK">
-                        Kelvin: <input type="text" name="kelvin" placeholder="Kelvin"><br />
-                        Celsius: <input type="text" name="celsius" placeholder="Celsius" READONLY><br />
-                        Fahrenheit: <input type="text" name="fahrenheit" placeholder="Fahrenheit" READONLY><br />
+                    <div class="tablek">
+                    <form name="lämpötilatK" id="kelvinform">
+                        <p>
+                        <label for="kelvin1">Kelvin:</label>
+                        <input type="text" name="kelvin" class="kelvin1" placeholder="Kelvin">
+                        </p>
+                        <p>
+                        <label for="celsius1">Celsius:</label>
+                        <input type="text" name="celsius" class="celsius1" placeholder="Celsius" READONLY>
+                        </p>
+                        <p>
+                        <label for="fahrenheit1">Fahrenheit:</label>
+                        <input type="text" name="fahrenheit" class="fahrenheit1" placeholder="Fahrenheit" READONLY>
+                        </p>
                         <input type="button" value="Muunna!" onClick="muunnaK()"/>
                         <input type="button" value="Reset" onClick="resetK()"/>
                     </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,5 +108,8 @@
         <footer class="footer">
             <h3 class="tekijä">Patrik Laamanen</h3>
         </footer>
+
+        <script src="resources/scripts/muunnin.js" type="text/javascript"></script>
+        
     </body>
 </html>

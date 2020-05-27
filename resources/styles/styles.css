@@ -1,0 +1,571 @@
+/* Yleiset tyylit */
+/* Käytössä: Kotisivu.html | Lämpötila.html | Noppapeli.html | Lomake.html | Kaverilista.html */
+
+html {
+    font-family: "helvetica";
+    font-size: 16px;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: red;
+}
+
+a:hover {
+    color: black;
+}
+
+
+
+
+/* Yhteinen Header kaikille sivuille */
+/* Käytössä: Kotisivu.html | Lämpötila.html | Noppapeli.html | Lomake.html | Kaverilista.html */
+
+#header {
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 10.2rem;
+    border-bottom: 1px solid seashell;
+}
+
+.headercontent {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.navi {
+    width: 100%;
+}
+
+.buttonsite {
+    display: inline;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid white;
+    background-color: navy;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.buttonsite:hover {
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid black;
+}
+
+#title {
+    font-size: 4rem;
+    width: 100%;
+    margin: 1.5rem 0 1.5rem 0;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: seashell;
+}
+
+.headerbanner {
+    background-image: url("bannerimg.jpg");
+}
+
+
+
+
+/* Yhteinen Footer kaikille sivuille */
+/* Käytössä: Kotisivu.html | Lämpötila.html | Noppapeli.html | Lomake.html | Kaverilista.html */
+
+.footer {
+    height: 4rem;
+    background-image: url("bannerimg.jpg");
+    border-top: 1px solid seashell;
+}
+
+.tekijä {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    color: seashell;
+    background-color: hsla(0, 0%, 0%, 0.5);
+}
+
+
+
+
+/* Kotisivun tyylit */
+/* Käytössä: Kotisivu.html */
+
+.sisältö {
+    width: 100%;
+    height: auto;
+    background-image: url("Sisältöbackground.jpg");
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.container p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.sectiontitle {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.sectioncontent {
+    height: auto;
+    width: 65%;
+    background-color: hsla(0, 0%, 0%, 0.9);
+    margin-top: 2rem;
+}
+
+.gallery {
+    height: auto;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.9);
+    margin-top: 2rem;
+    flex-shrink: 1;
+}
+
+.kuvat {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+}
+
+.sectioncontent img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.kotisivuimg {
+    border: 1px solid red;
+    margin: 2rem 2rem;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+/* JavaScript sivujen yhteiset tyylit */
+/* Käytössä: Lämpötila.html | Noppapeli.html | Lomake.html | Kaverilista.html */
+
+.sisältöJS {
+    height: 50rem;
+    width: 100%;
+    background-color: grey;
+    position: relative;
+}
+
+.jsbody {
+    color: black;
+}
+
+
+
+
+/* Lämpötilojen yksikkömuunnin */
+/* Käytössä: Lämpötila.html */
+
+.lämpötila {
+    width: 60%;
+    height: 40rem;
+    background-color: white;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.lämpötila p {
+    display: table-row;
+}
+
+.lämpötilatitle {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.lämpötilah2 {
+    margin-bottom: 1rem;
+}
+
+.lämpötilaC {
+    display: table;
+    margin: 2rem auto;
+}
+
+.lämpötilaK {
+    display: table;
+    margin: 2rem auto;
+}
+
+.lämpötilaF {
+    display: table;
+    margin: 2rem auto;
+}
+
+.tablec {
+    display: table-row
+}
+
+.tablef {
+    display: table-row;
+}
+
+.tablek {
+    display: table-row;
+}
+
+#fahrenform {
+    display: table-cell;
+}
+
+#celsiusform {
+    display: table-cell;
+}
+
+#kelvinform {
+    display: table-cell;
+}
+
+#kelvinform input {
+    display: table-cell;
+}
+
+#kelvinform label {
+    display: table-cell;
+    text-align: right;
+}
+
+#celsiusform input {
+    display: table-cell;
+}
+
+#celsiusform label {
+    display: table-cell;
+    text-align: right;
+}
+
+#fahrenform label {
+    display: table-cell;
+    text-align: right;
+}
+
+#fahrenform input {
+    display: table-cell;
+}
+
+
+
+/* Sikanoppapelin tyylit */
+/* Käytössä: Noppapeli.html */
+
+.noppapeli {
+    width: 60%;
+    height: 40rem;
+    background-color: white;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#noppapelititle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.noppapeli-btn {
+    position: absolute;
+    left: 45%;
+}
+
+.btn-new {top: 200px;}
+.btn-roll {top: 360px;}
+.btn-hold {
+    top: 390px;
+}
+
+#pelaaja1 {
+    padding-top: 1rem;
+    width: 50%;
+    float: left;
+    height: 400px;
+}
+
+#pelaaja2 {
+    padding-top: 1rem;
+    width: 50%;
+    float: right;
+    height: 400px;
+}
+
+#score-0 {
+    margin-bottom: 10rem;
+    margin-top: 1rem;
+}
+
+#score-1 {
+    margin-bottom: 10rem;
+    margin-top: 1rem;
+}
+
+#p0-roll1 {
+    visibility: hidden;
+}
+
+#p1-roll1 {
+    visibility: hidden;
+}
+
+#dice1 {
+    display: flex;
+    position: relative;
+    left: 46%;
+    top: 190px;
+}
+
+.diceimg {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+/* Lomakkeen validiointi tyylit */
+/* Käytössä: Lomake.html */
+
+.lomake {
+    width: 60%;
+    height: 40rem;
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.lomake p {
+    display: table-row;
+}
+
+.lomake label {
+    display: table-cell;
+    text-align: right;
+}
+
+.lomake input {
+    display: table-cell;
+}
+
+.lomake select {
+    display: table-cell;
+    width: 10.8rem;
+    height: 1.4rem;
+}
+
+#suomi {
+    margin-left: 4.7rem;
+}
+
+#rektitle {
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+#siirtytitle {
+    margin-bottom: 2rem;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.lomake1 {
+    position: absolute;
+    display: table;
+}
+
+#submit {
+    position: absolute;
+    left: 50%;
+    height: 2rem;
+    width: 5.1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.lomake1 span {
+    width: 20rem;
+    position: absolute;
+    text-align: left;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: red;
+}
+
+.virhe {
+    border: 1px solid red;
+}
+
+
+/* Kaverilistojen tyylit */
+/* Käytössä: Kaverilista.html */
+
+.kaverili {
+    width: 60%;
+    height: 40rem;
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.kaverilista-0 {
+    width: 40%;
+    height: 100%;
+    float: left;
+    border: 1px solid black;
+}
+
+.kaverilista-1 {
+    width: 59.5%;
+    height: 100%;
+    float: left;
+    border: 1px solid black;
+}
+
+.kltitle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.kl-nimi-0 {
+    width: auto;
+}
+
+
+
+
+/* Media queries */
+/* Käytössä: Kotisivu.html | Lämpötila.html | Noppapeli.html | Lomake.html | Kaverilista.html */
+
+@media only screen and (max-width: 950px) {
+
+
+    /* Header 950px max-width */
+
+    #title {
+        font-size: 3rem;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .buttonsite {
+        padding: 0.3rem 0.4rem;
+        font-size: 1rem;
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+    }
+
+    #header {
+        height: 7.5rem;
+    }
+
+
+    /* Content 950px max-width */
+
+    .sectioncontent {
+        width: 70%;
+    }
+}
+
+
+
+@media only screen and (max-width: 650px) {
+
+    #title {
+        font-size: 2rem;
+        margin: 0.7rem 0 0.7rem 0;
+    }
+
+    .buttonsite {
+        padding: 0.2rem 0.3rem;
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    #header {
+        height: 6rem;
+    }
+
+
+    /* Content 650px max-width  */
+
+    .sectioncontent {
+        width: 75%;
+    }
+
+    .sectiontitle {
+        font-size: 1.5rem;
+    }
+
+    .sectioncontent p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+   
+    #title {
+        display: none;
+    }
+
+    #header {
+        height: 4rem;
+    }
+
+    .naviul {
+        margin-top: 0.3rem;
+    }
+
+    .buttonsite {
+        display: inline-block;
+        margin-top: 0.3rem;
+    }
+
+
+    /* Content 530px max-width  */
+
+    .sectioncontent {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+
+    .buttonsite {
+        margin-left: 0.15rem;
+        margin-right: 0.15rem;
+    }
+
+    #header {
+        height: 6rem;
+    }
+
+}
