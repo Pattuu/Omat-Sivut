@@ -1,0 +1,29 @@
+otsikko {
+    font-size: 3rem;
+    color: lightskyblue;
+    background-color: grey;
+    width: 100%;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+elokuva {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    background-color: grey;
+    width: 100%;
+    margin: 1rem;
+}
+
+nimi {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+otsikko, elokuva, nimi, ohjaaja, vuosi, genre, ikäraja {
+    display: block;
+}
+
+elokuvat {
+    background-color: lightgreen;
+}

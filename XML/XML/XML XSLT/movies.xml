@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<elokuvat>
+    <elokuva>
+        <nimi>The Hateful Eight</nimi>
+        <ohjaaja>Quentin Tarantino</ohjaaja>
+        <vuosi>2015</vuosi>
+        <genre>Lännenelokuva</genre>
+        <ikäraja>16</ikäraja>
+    </elokuva>
+
+    <elokuva>
+        <nimi>Interstellar</nimi>
+        <ohjaaja>Christopher Nolan</ohjaaja>
+        <vuosi>2014</vuosi>
+        <genre>Tieteiselokuva</genre>
+        <ikäraja>12</ikäraja>
+    </elokuva>
+
+    <elokuva>
+        <nimi>Jarhead</nimi>
+        <ohjaaja>Sam Mendes</ohjaaja>
+        <vuosi>2005</vuosi>
+        <genre>Sotaelokuva</genre>
+        <ikäraja>12</ikäraja>
+    </elokuva>
+
+    <elokuva>
+        <nimi>Fury</nimi>
+        <ohjaaja>David Ayer</ohjaaja>
+        <vuosi>2014</vuosi>
+        <genre>Sotaelokuva</genre>
+        <ikäraja>16</ikäraja>
+        </elokuva>
+</elokuvat>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="stylesx.css"?>
+<elokuvat>
+    <otsikko>XML-Elokuvat</otsikko>
+    <elokuva>
+        <nimi>Nimi: The Hateful Eight</nimi>
+        <ohjaaja>Ohjaaja: Quentin Tarantino</ohjaaja>
+        <vuosi>Julkaisuvuosi: 2015</vuosi>
+        <genre>Genre: Lännenelokuva</genre>
+        <ikäraja>Ikäraja: 16</ikäraja>
+    </elokuva>
+
+    <elokuva>
+        <nimi>Nimi: Interstellar</nimi>
+        <ohjaaja>Ohjaaja: Christopher Nolan</ohjaaja>
+        <vuosi>Julkaisuvuosi: 2014</vuosi>
+        <genre>Genre: Tieteiselokuva</genre>
+        <ikäraja>Ikäraja: 12</ikäraja>
+    </elokuva>
+
+    <elokuva>
+        <nimi>Nimi: Jarhead</nimi>
+        <ohjaaja>Ohjaaja: Sam Mendes</ohjaaja>
+        <vuosi>Julkaisuvuosi: 2005</vuosi>
+        <genre>Genre: Sotadraama</genre>
+        <ikäraja>Ikäraja: 12</ikäraja>
+    </elokuva>
+
+    <elokuva>
+        <nimi>Nimi: Fury</nimi>
+        <ohjaaja>Ohjaaja: David Ayer</ohjaaja>
+        <vuosi>Julkaisuvuosi: 2014</vuosi>
+        <genre>Genre: Sotaelokuva</genre>
+        <ikäraja>Ikäraja: 16</ikäraja>
+        </elokuva>
+</elokuvat>
